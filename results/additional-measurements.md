@@ -5,6 +5,7 @@ Values are recomputed from the three complete runs linked in each row. ± is the
 | Task / shift / method | Paper best | Reproduced best | Paper AUC | Reproduced AUC | Paper final MSE | Reproduced final MSE |
 |---|---:|---:|---:|---:|---:|---:|
 | [cube/quadratic](additional/cube/quadratic) | 0.6280 | 0.6405 ± 0.0116 | 0.5300 | 0.5220 ± 0.0040 | 0.24754 | 0.1501 ± 0.0128 |
+| [cube/delayed](additional/cube/delayed) | 0.6430 | 0.6452 ± 0.0033 | 0.5130 | 0.4678 ± 0.0052 | 0.10688 | 0.1032 ± 0.0035 |
 | [episodic-baseline/grid/trainable](additional/episodic-baseline/grid/trainable) | 0.2031 | 0.2115 ± 0.0045 | 0.2031 | 0.2115 ± 0.0045 | — | — |
 | [episodic-baseline/grid/frozen](additional/episodic-baseline/grid/frozen) | 0.2470 | 0.2015 ± 0.0011 | 0.2470 | 0.2015 ± 0.0011 | — | — |
 | [stream-controls/grid/sparse](additional/stream-controls/grid/sparse) | 0.7860 | 0.6707 ± 0.0054 | 0.6620 | 0.5580 ± 0.0057 | — | — |
