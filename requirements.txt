@@ -1,0 +1,12 @@
+# Python 3.11, Linux; use the official PyTorch CUDA 12.6 wheel index.
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.8.0+cu126
+torchvision==0.23.0+cu126
+numpy==1.26.4
+gymnasium==1.1.1
+einops==0.8.0
+matplotlib==3.9.3
+transformers @ https://github.com/huggingface/transformers/archive/21fac7abba2a37fae86106f87fcf9974fd1e3830.zip
+huggingface-hub==0.26.3
+tokenizers==0.19.1
+safetensors==0.4.5
