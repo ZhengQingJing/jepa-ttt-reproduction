@@ -14,3 +14,4 @@ Values are recomputed from the three complete runs linked in each row. ± is the
 | [episodic-baseline/wave/trainable](additional/episodic-baseline/wave/trainable) | 0.5791 | 0.4264 ± 0.0032 | 0.5791 | 0.4264 ± 0.0032 | — | — |
 | [episodic-baseline/wave/frozen](additional/episodic-baseline/wave/frozen) | 0.5850 | 0.4171 ± 0.0055 | 0.5850 | 0.4171 ± 0.0055 | — | — |
 | [stream-controls/wave/sparse](additional/stream-controls/wave/sparse) | 0.5050 | 0.6559 ± 0.0213 | 0.4270 | 0.4464 ± 0.0073 | — | — |
+| [stream-controls/wave/matched-sparse](additional/stream-controls/wave/matched-sparse) | 0.7900 | 0.7320 ± 0.0037 | 0.6720 | 0.5994 ± 0.0102 | — | — |
