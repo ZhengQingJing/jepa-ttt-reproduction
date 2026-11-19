@@ -13,6 +13,8 @@ Independent reproduction of *JEPA-TTT: Persistent Test-Time Training of Latent W
 
 The task directories include simulation checks and their task-specific dependencies. The [shared benchmark driver](src/benchmark.py) evaluates frozen planning, fixed-trajectory prediction error and 500 episodes of dense replay. After finishing the three seeds for a shift, run `python scripts/summarize_benchmark.py path/to/task/shift` to verify the seed sets and update counts and recompute the best score, AUC and latent prediction error.
 
+[Additional measured results and paper comparisons](results/additional-measurements.md) links to the complete three-run records for each reported condition.
+
 ## Two-Room results
 
 Each run starts from the same world model and reward head. We report the mean and sample standard deviation over three separately seeded deployment runs. For each shift, we evaluate every 50 episodes on the same 100 held-out starts. The fixed-trajectory prediction test uses a separate set of 100 trajectories from the frozen controller.

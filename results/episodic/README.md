@@ -17,4 +17,4 @@ done
 python scripts/check_tworoombaselines.py episodic runs/episodic-baseline/grid/trainable
 ```
 
-The same entry point accepts `--shift wave` and `--encoder frozen`. To recalculate the published grid row using only the Python standard library, run `python scripts/check_tworoombaselines.py episodic results/episodic/grid/trainable`.
+The same entry point accepts `--shift wave` and `--encoder frozen`. To recalculate the published grid row using only the Python standard library, run `python scripts/check_tworoombaselines.py episodic results/additional/episodic-baseline/grid/trainable`. [All measured conditions and raw runs](../additional-measurements.md).
