@@ -1,0 +1,4 @@
+# Install the common reproduction requirements first.
+mujoco==3.3.6
+dm-control==1.0.34
+ogbench @ git+https://github.com/seohongpark/ogbench.git@6eda27402c69681cfe584cc9f3a3fe2a24ec9163

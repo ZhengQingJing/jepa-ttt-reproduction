@@ -1,0 +1,23 @@
+{
+  "purpose": "End-to-end wiring check using seeded random world-model and reward-head weights; the paper metric comparison uses separately pretrained weights.",
+  "shifts": {
+    "joint-phase": {
+      "evaluation_episodes": 2,
+      "deployment_episodes": 2,
+      "valid_windows": 64,
+      "adamw_updates": 1,
+      "diagnostic_trajectories": 2,
+      "trajectory_mse_is_finite": true,
+      "predictor_weights_changed": true
+    },
+    "harmonic": {
+      "evaluation_episodes": 2,
+      "deployment_episodes": 2,
+      "valid_windows": 64,
+      "adamw_updates": 1,
+      "diagnostic_trajectories": 2,
+      "trajectory_mse_is_finite": true,
+      "predictor_weights_changed": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "environment": {
+    "rgb_shape": [
+      224,
+      224,
+      3
+    ],
+    "action_rotation_degrees": 90,
+    "perfect_overlap": 1.0,
+    "contact_or_release_substeps": 836,
+    "nonzero_contact_translations": 803,
+    "maximum_contact_translation_rotation_residual": 5.684341886080802e-14,
+    "maximum_free_substep_delta_change": 0.0,
+    "maximum_sampled_coverage_difference_vs_shapely": 4.310170409471681e-08
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "purpose": "End-to-end GPU interface check for the paper protocol; miniature weights trained on three original-dynamics episodes for one epoch.",
+  "device": "NVIDIA RTX A6000",
+  "pretraining_episodes": 3,
+  "pretraining_epochs": 1,
+  "planning_candidates": 256,
+  "cem_iterations": 6,
+  "elite_count": 32,
+  "blocks": 5,
+  "actions_per_block": 5,
+  "cases": {
+    "action": {
+      "episode_horizon": 300,
+      "action_dim": 2,
+      "eval_episodes": 1,
+      "fixed_behavior_trajectories": 1,
+      "fixed_observed_and_action_rows": [
+        301,
+        300
+      ],
+      "online_episodes": 1,
+      "dense_windows": 282,
+      "predictor_updates": 4,
+      "initial_predictor_fingerprint_match": true,
+      "final_predictor_changed": true,
+      "frozen_encoder_fingerprint_match": true
+    },
+    "contact": {
+      "episode_horizon": 300,
+      "action_dim": 2,
+      "eval_episodes": 1,
+      "fixed_behavior_trajectories": 1,
+      "fixed_observed_and_action_rows": [
+        301,
+        300
+      ],
+      "online_episodes": 1,
+      "dense_windows": 282,
+      "predictor_updates": 4,
+      "initial_predictor_fingerprint_match": true,
+      "final_predictor_changed": true,
+      "frozen_encoder_fingerprint_match": true
+    }
+  }
+}

@@ -38,11 +38,13 @@ class Planner:
     def __init__(self, model, head, mean, std):
         self.model, self.head = model, head
         self.mean, self.std = mean.cuda(), std.cuda()
+        self.action_dim = self.mean.numel()
+        self.block_dim = 5 * self.action_dim
 
     def action_embeddings(self, blocks):
         b, t = blocks.shape[:2]
-        flattened = ((blocks.reshape(b, t, 5, 2) - self.mean) / self.std).reshape(
-            b, t, 10
+        flattened = ((blocks.reshape(b, t, 5, self.action_dim) - self.mean) / self.std).reshape(
+            b, t, self.block_dim
         )
         return self.model.action_encoder(flattened)
 
@@ -63,21 +65,21 @@ class Planner:
         n = len(z)
         ns = 256
         h = 5
-        mu = torch.zeros((n, h, 10), device="cuda")
+        mu = torch.zeros((n, h, self.block_dim), device="cuda")
         std = torch.ones_like(mu)
         zbase = z[:, None].expand(-1, ns, -1, -1).reshape(n * ns, z.shape[1], 192)
-        ab = past[:, None].expand(-1, ns, -1, -1).reshape(n * ns, past.shape[1], 10)
+        ab = past[:, None].expand(-1, ns, -1, -1).reshape(n * ns, past.shape[1], self.block_dim)
         discounts = (0.99 ** torch.arange(1, h + 1, device="cuda")).view(1, h)
         with amp():
             for _ in range(6):
                 noise = torch.stack(
                     [
-                        torch.randn((ns, h, 10), generator=g, device="cuda")
+                        torch.randn((ns, h, self.block_dim), generator=g, device="cuda")
                         for g in generators
                     ]
                 )
                 cand = (mu[:, None] + std[:, None] * noise).clamp_(-1, 1)
-                pred = self.rollout(zbase, ab, cand.reshape(n * ns, h, 10))
+                pred = self.rollout(zbase, ab, cand.reshape(n * ns, h, self.block_dim))
                 value = (
                     (self.head(pred).squeeze(-1).float() * discounts).sum(1).view(n, ns)
                 )
@@ -85,7 +87,7 @@ class Planner:
                 elite = cand[torch.arange(n, device="cuda")[:, None], best]
                 mu = elite.mean(1)
                 std = elite.std(1, unbiased=False).clamp_(min=0.05)
-        return mu[:, 0].view(n, 5, 2).cpu().numpy()
+        return mu[:, 0].view(n, 5, self.action_dim).cpu().numpy()
 
     @torch.no_grad()
     def frames(self, envs):
@@ -95,10 +97,10 @@ class Planner:
 
 
 class Replay:
-    def __init__(self, budget, planner, seed):
-        cap = budget * 32 + 32
+    def __init__(self, budget, planner, seed, horizon=50):
+        cap = budget * (horizon - 18) + 32
         self.obs = torch.empty(cap, 4, 192, device="cuda")
-        self.acts = torch.empty(cap, 3, 10, device="cuda")
+        self.acts = torch.empty(cap, 3, planner.block_dim, device="cuda")
         self.count = self.updates = 0
         self.rng = np.random.default_rng(seed)
         self.planner = planner
@@ -127,7 +129,7 @@ class Replay:
         ]
         self.acts[self.count : end] = a[
             windows[:, None] + torch.arange(15, device="cuda")
-        ].view(-1, 3, 10)
+        ].view(-1, 3, self.planner.block_dim)
         self.count = end
         if self.updates < self.count // 64:
             ix = torch.from_numpy(self.rng.choice(self.count, 64, replace=False))
@@ -242,7 +244,7 @@ def diagnostic(planner, data):
     a = data["a"].cuda()
     ix = torch.arange(z.shape[1] - 35, device="cuda")
     latent = z[:, ix[:, None] + torch.arange(8, device="cuda") * 5].reshape(-1, 8, 192)
-    acts = a[:, ix[:, None] + torch.arange(35, device="cuda")].reshape(-1, 7, 10)
+    acts = a[:, ix[:, None] + torch.arange(35, device="cuda")].reshape(-1, 7, planner.block_dim)
     all_mse = []
     with torch.no_grad(), amp():
         for i in range(0, len(latent), 256):

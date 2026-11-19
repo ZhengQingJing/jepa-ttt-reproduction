@@ -1,0 +1,18 @@
+{
+  "episodes": 3000,
+  "raw_steps": 200,
+  "rows": 600000,
+  "native_rgb": [
+    224,
+    224,
+    3
+  ],
+  "policy": "uniform random [-1, 1]^2",
+  "environment_seed": "100000+episode",
+  "command_seed": "130000+episode",
+  "raw_action_repeat": 2,
+  "target": [
+    0.0,
+    0.0
+  ]
+}

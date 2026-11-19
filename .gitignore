@@ -8,3 +8,8 @@ __pycache__/
 /logs/
 /upstream/
 /runs/
+/experiments/*/data/
+/experiments/*/models/
+/experiments/*/runs/
+/experiments/*/logs/
+/experiments/*/checkpoints/

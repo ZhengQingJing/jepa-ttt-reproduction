@@ -1,8 +1,19 @@
 # JEPA-TTT reproduction
 
-Independent implementation of the **Two-Room** experiments from *JEPA-TTT: Persistent Test-Time Training of Latent World Models for Planning under Dynamics Shifts* by Zheyuan Zhang et al. A pretrained action-conditioned LeWorldModel adapts its dynamics predictor using RGB observations and executed actions. A frozen, offline-trained reward head scores plans during deployment. [Paper](https://arxiv.org/abs/2610.00722) · [Authors' project page](https://jepa-ttt.github.io/)
+Independent reproduction of *JEPA-TTT: Persistent Test-Time Training of Latent World Models for Planning under Dynamics Shifts* by Zheyuan Zhang et al. A pretrained action-conditioned LeWorldModel adapts its dynamics predictor using RGB observations and executed actions. A frozen, offline-trained reward head scores plans during deployment. [Paper](https://arxiv.org/abs/2610.00722) · [Authors' project page](https://jepa-ttt.github.io/)
 
-## Results
+## Task implementations
+
+| Task | Test-time dynamics changes | Reproduction entry point |
+|---|---|---|
+| Two-Room | Spatial wave and grid rotation | [End-to-end commands](#reproduce) |
+| PushT | Rotated pusher target and rotated contact displacement | [Native environment, data collection and deployment](experiments/pusht/README.md) |
+| Reacher | Joint-phase and harmonic motor fields | [MuJoCo environment, data collection and deployment](experiments/reacher/README.md) |
+| OGBench-Cube | Quadratic crosstalk and delayed cyclic actuation | [UR5e hover task, data collection and deployment](experiments/cube/README.md) |
+
+The task directories include simulation checks and their task-specific dependencies. The [shared benchmark driver](src/benchmark.py) evaluates frozen planning, fixed-trajectory prediction error and 500 episodes of dense replay. After finishing the three seeds for a shift, run `python scripts/summarize_benchmark.py path/to/task/shift` to verify the seed sets and update counts and recompute the best score, AUC and latent prediction error.
+
+## Two-Room results
 
 Each run starts from the same world model and reward head. We report the mean and sample standard deviation over three separately seeded deployment runs. For each shift, we evaluate every 50 episodes on the same 100 held-out starts. The fixed-trajectory prediction test uses a separate set of 100 trajectories from the frozen controller.
 
@@ -56,6 +67,8 @@ To train both offline components yourself, run `python scripts/reproduce.py grid
 - **Implementation choices.** We condition the evaluation reset on the left room (`x < 100`), use a one-epoch linear warm-up, and draw raw CEM commands from a clipped diagonal Gaussian. The model receives standardized commanded actions. The simulator applies the wave or grid rotation before native clipping. The 1,500 deployment episodes for a shift use 1,023 distinct simulator reset seeds after conditioning on the left room. Starting positions can recur across runs. The held-out evaluation and fixed-trajectory diagnostic seed suites are disjoint from the deployment reset seeds.
 
 The [matched persistence control](results/persistence/README.md) uses episode-local windows and a batch of eight to compare retaining and resetting the predictor and optimizer. Its update budget is separate from the dense-replay results above.
+
+The [episodic AdaJEPA control](results/episodic/README.md) adapts on the five most recent executed segments and restores the original weights each episode. For the streaming ablations in Table 1, run `python src/stream_controls.py --shift grid --mode sparse --seed 0`. Use seeds 0–2, either shift, and modes `sparse`, `matched-sparse`, or `dense`. The first uses every action-block-aligned window once, the second repeats aligned windows to match the dense presentation budget, and the third uses each dense window once in chronological order.
 
 ## Attribution and license
 

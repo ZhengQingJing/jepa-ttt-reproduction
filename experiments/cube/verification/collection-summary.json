@@ -1,0 +1,37 @@
+{
+  "episodes": 3000,
+  "raw_observations": 150000,
+  "rgb_dtype": "uint8",
+  "rgb_shape": [
+    3000,
+    50,
+    224,
+    224,
+    3
+  ],
+  "action_shape": [
+    3000,
+    50,
+    3
+  ],
+  "effector_shape": [
+    3000,
+    50,
+    3
+  ],
+  "action_mean": [
+    0.00027322044286554655,
+    0.005106851079211243,
+    -0.046187006347515276
+  ],
+  "action_std": [
+    0.5311204265192336,
+    0.5641264931124057,
+    0.5518269471691004
+  ],
+  "sha256": {
+    "rgb.npy": "20742cedf9601b40bcfc69cd66018de52a1886c71c5eee138406ce5cac25e8db",
+    "action.npy": "2bdc8f77afa29d5380745852466dcedc73a43cbcf406d8d4e7e23a9a6ac4e2dd",
+    "pos.npy": "55c95cebd004f9e621a304ef0822713aa5d3498ebbe6ed625ef8bbc29462eb54"
+  }
+}

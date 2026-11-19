@@ -1,0 +1,48 @@
+{
+  "environment": {
+    "rgb_shape": [
+      224,
+      224,
+      3
+    ],
+    "action_rotation_degrees": 90,
+    "perfect_overlap": 1.0,
+    "contact_or_release_substeps": 836,
+    "nonzero_contact_translations": 803,
+    "maximum_contact_translation_rotation_residual": 5.684341886080802e-14,
+    "maximum_free_substep_delta_change": 0.0,
+    "maximum_sampled_coverage_difference_vs_shapely": 4.310170409471681e-08
+  },
+  "offline_dataset": {
+    "episodes": 3000,
+    "actions": 900000,
+    "rgb_frames": 903000,
+    "width": 224,
+    "height": 224,
+    "seed": 100000,
+    "shards": 120,
+    "verified_replay": [
+      {
+        "episode": 0,
+        "raw_actions": 300,
+        "bit_exact_rgb_frames": 301
+      },
+      {
+        "episode": 1500,
+        "raw_actions": 300,
+        "bit_exact_rgb_frames": 301
+      },
+      {
+        "episode": 2975,
+        "raw_actions": 300,
+        "bit_exact_rgb_frames": 301
+      }
+    ],
+    "reward_validation": {
+      "frames": 90300,
+      "below_0.1": 86084,
+      "at_least_0.5": 112,
+      "max": 0.7651751041412354
+    }
+  }
+}

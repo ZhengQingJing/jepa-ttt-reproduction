@@ -1,0 +1,30 @@
+{
+  "input_batch_frames": [
+    128,
+    4,
+    3,
+    224,
+    224
+  ],
+  "native_observation_shape": [
+    224,
+    224,
+    3
+  ],
+  "predicted_latent_shape": [
+    128,
+    3,
+    192
+  ],
+  "finite_loss": true,
+  "planned_action_shape": [
+    1,
+    5,
+    2
+  ],
+  "native_step_score": 0.6379431905108457,
+  "device": "NVIDIA RTX A6000",
+  "peak_mem_gib": 12.115040302276611,
+  "purpose": "GPU smoke test of one pretraining batch and a CEM action block from a randomly initialized model.",
+  "training_data": "original Reacher RGB observations from episode 0, overlapping windows starting at rows 0 through 127."
+}

@@ -1,0 +1,9 @@
+{
+  "episodes": 3000,
+  "actions": 900000,
+  "rgb_frames": 903000,
+  "width": 224,
+  "height": 224,
+  "seed": 100000,
+  "shards": 120
+}
