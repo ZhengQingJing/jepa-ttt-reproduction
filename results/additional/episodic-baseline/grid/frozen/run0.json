@@ -1,0 +1,808 @@
+{
+  "shift": "grid",
+  "encoder_head": "frozen",
+  "seed": 0,
+  "mean": 0.20044401517820204,
+  "episodes": [
+    {
+      "seed": 1000000,
+      "steps": 50,
+      "end_score": 0.19554254148650205,
+      "peak_score": 0.19932117880709252,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000001,
+      "steps": 50,
+      "end_score": 0.18119467221831323,
+      "peak_score": 0.19403127198343928,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000002,
+      "steps": 50,
+      "end_score": 0.1770089073850926,
+      "peak_score": 0.18470279074940202,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000003,
+      "steps": 50,
+      "end_score": 0.19525405411426247,
+      "peak_score": 0.19525405411426247,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000004,
+      "steps": 50,
+      "end_score": 0.06735149356547646,
+      "peak_score": 0.06735149356547646,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000005,
+      "steps": 50,
+      "end_score": 0.022698825092445033,
+      "peak_score": 0.022698825092445033,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000006,
+      "steps": 50,
+      "end_score": 0.17791862687642324,
+      "peak_score": 0.1853712838238988,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000007,
+      "steps": 50,
+      "end_score": 0.193166925788267,
+      "peak_score": 0.193166925788267,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000008,
+      "steps": 50,
+      "end_score": 0.1782283010246772,
+      "peak_score": 0.18051012259263768,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000009,
+      "steps": 50,
+      "end_score": 0.192863549425476,
+      "peak_score": 0.19531860940079301,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000010,
+      "steps": 50,
+      "end_score": 0.1744989185514543,
+      "peak_score": 0.17709014417822655,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000011,
+      "steps": 50,
+      "end_score": 0.1735761405286963,
+      "peak_score": 0.1735761405286963,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000012,
+      "steps": 50,
+      "end_score": 0.173748755266607,
+      "peak_score": 0.1885219945454835,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000013,
+      "steps": 50,
+      "end_score": 0.2743974696197503,
+      "peak_score": 0.28823962245612794,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000014,
+      "steps": 50,
+      "end_score": 0.05609748216795512,
+      "peak_score": 0.05609748216795512,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000015,
+      "steps": 50,
+      "end_score": 0.1679161465036302,
+      "peak_score": 0.18345373030164872,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000016,
+      "steps": 50,
+      "end_score": 0.21388502489488673,
+      "peak_score": 0.21388502489488673,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000017,
+      "steps": 50,
+      "end_score": 0.7337225972504734,
+      "peak_score": 0.7337225972504734,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000018,
+      "steps": 50,
+      "end_score": 0.41509750931326894,
+      "peak_score": 0.41703481606546383,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000019,
+      "steps": 50,
+      "end_score": 0.19125968116900724,
+      "peak_score": 0.19125968116900724,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000020,
+      "steps": 50,
+      "end_score": 0.17731978834787226,
+      "peak_score": 0.18695347325097908,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000021,
+      "steps": 50,
+      "end_score": 0.18319535064161405,
+      "peak_score": 0.18319535064161405,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000022,
+      "steps": 50,
+      "end_score": 0.16823821087278282,
+      "peak_score": 0.1682794300922722,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000023,
+      "steps": 50,
+      "end_score": 0.1748702107390296,
+      "peak_score": 0.17879286212728,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000024,
+      "steps": 50,
+      "end_score": 0.17180187840821404,
+      "peak_score": 0.17327004663838605,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000025,
+      "steps": 50,
+      "end_score": 0.18384142439098933,
+      "peak_score": 0.19118994889606014,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000026,
+      "steps": 50,
+      "end_score": 0.292422464509043,
+      "peak_score": 0.2996429387734307,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000027,
+      "steps": 50,
+      "end_score": 0.1608367508309708,
+      "peak_score": 0.1608367508309708,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000028,
+      "steps": 50,
+      "end_score": 0.2230545780605637,
+      "peak_score": 0.2230545780605637,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000029,
+      "steps": 50,
+      "end_score": 0.22080674653481575,
+      "peak_score": 0.22080674653481575,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000030,
+      "steps": 50,
+      "end_score": 0.18872015822094285,
+      "peak_score": 0.1908575716885681,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000031,
+      "steps": 50,
+      "end_score": 0.0790817675000171,
+      "peak_score": 0.0790817675000171,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000032,
+      "steps": 50,
+      "end_score": 0.19166789294077208,
+      "peak_score": 0.19166789294077208,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000033,
+      "steps": 50,
+      "end_score": 0.24319967131485523,
+      "peak_score": 0.24319967131485523,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000034,
+      "steps": 50,
+      "end_score": 0.18098492725257712,
+      "peak_score": 0.18648339472012523,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000035,
+      "steps": 50,
+      "end_score": 0.15949769882324927,
+      "peak_score": 0.15949769882324927,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000036,
+      "steps": 50,
+      "end_score": 0.18440705792196638,
+      "peak_score": 0.19435654859614046,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000037,
+      "steps": 50,
+      "end_score": 0.1703960516229056,
+      "peak_score": 0.1889924805947788,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000038,
+      "steps": 50,
+      "end_score": 0.1665793849694282,
+      "peak_score": 0.18748683757650594,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000039,
+      "steps": 50,
+      "end_score": 0.14300042663678125,
+      "peak_score": 0.1756606225378812,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000040,
+      "steps": 50,
+      "end_score": 0.17826155485074863,
+      "peak_score": 0.18748766453471985,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000041,
+      "steps": 50,
+      "end_score": 0.21792960661983427,
+      "peak_score": 0.2482720692769486,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000042,
+      "steps": 50,
+      "end_score": 0.1993736260921091,
+      "peak_score": 0.20238693857549503,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000043,
+      "steps": 50,
+      "end_score": 0.19441162936477513,
+      "peak_score": 0.19525356531683577,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000044,
+      "steps": 50,
+      "end_score": 0.17795852651905358,
+      "peak_score": 0.18533944337095512,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000045,
+      "steps": 50,
+      "end_score": 0.17475105304868735,
+      "peak_score": 0.1841702769227549,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000046,
+      "steps": 50,
+      "end_score": 0.40549353197540006,
+      "peak_score": 0.40549353197540006,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000047,
+      "steps": 50,
+      "end_score": 0.17358193435414135,
+      "peak_score": 0.19567582963888855,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000048,
+      "steps": 50,
+      "end_score": 0.18992038209192683,
+      "peak_score": 0.20101819247587627,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000049,
+      "steps": 50,
+      "end_score": 0.41478753688398434,
+      "peak_score": 0.41478753688398434,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000050,
+      "steps": 50,
+      "end_score": 0.176299815046516,
+      "peak_score": 0.18258898159151285,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000051,
+      "steps": 50,
+      "end_score": 0.1505974575401266,
+      "peak_score": 0.18295691936765063,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000052,
+      "steps": 50,
+      "end_score": 0.22908358618113359,
+      "peak_score": 0.22908358618113359,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000053,
+      "steps": 50,
+      "end_score": 0.19266425042912969,
+      "peak_score": 0.2437547984082498,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000054,
+      "steps": 50,
+      "end_score": 0.17830837570305783,
+      "peak_score": 0.18348500619342464,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000055,
+      "steps": 50,
+      "end_score": 0.20242361403096262,
+      "peak_score": 0.20242361403096262,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000056,
+      "steps": 50,
+      "end_score": 0.17778130562191152,
+      "peak_score": 0.1867057882930569,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000057,
+      "steps": 50,
+      "end_score": 0.15994529758129,
+      "peak_score": 0.18838906530092675,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000058,
+      "steps": 50,
+      "end_score": 0.21289386029491586,
+      "peak_score": 0.21289386029491586,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000059,
+      "steps": 50,
+      "end_score": 0.18556153449610532,
+      "peak_score": 0.19015310809824085,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000060,
+      "steps": 50,
+      "end_score": 0.17884325498001827,
+      "peak_score": 0.18353042040408557,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000061,
+      "steps": 50,
+      "end_score": 0.17778086056562267,
+      "peak_score": 0.18114331448848375,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000062,
+      "steps": 50,
+      "end_score": 0.1827556133286544,
+      "peak_score": 0.18449347148748654,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000063,
+      "steps": 50,
+      "end_score": 0.17296657506012844,
+      "peak_score": 0.17449427979117216,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000064,
+      "steps": 50,
+      "end_score": 0.16437706744653657,
+      "peak_score": 0.23787737016411128,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000065,
+      "steps": 50,
+      "end_score": 0.18523783798830185,
+      "peak_score": 0.1948542780008621,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000066,
+      "steps": 50,
+      "end_score": 0.17457536144187155,
+      "peak_score": 0.17919232279258399,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000067,
+      "steps": 50,
+      "end_score": 0.19517290723061945,
+      "peak_score": 0.19517290723061945,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000068,
+      "steps": 50,
+      "end_score": 0.17300334304127932,
+      "peak_score": 0.1772710927010617,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000069,
+      "steps": 32,
+      "end_score": 0.8170281901107694,
+      "peak_score": 0.8170281901107694,
+      "success": 1,
+      "updates": 6
+    },
+    {
+      "seed": 1000070,
+      "steps": 50,
+      "end_score": 0.1738193162485552,
+      "peak_score": 0.17465660569259447,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000071,
+      "steps": 50,
+      "end_score": 0.17814059594024245,
+      "peak_score": 0.1824431620886339,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000072,
+      "steps": 50,
+      "end_score": 0.18256277684357367,
+      "peak_score": 0.18678748959009972,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000073,
+      "steps": 50,
+      "end_score": 0.19278178732369083,
+      "peak_score": 0.19470019502617808,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000074,
+      "steps": 50,
+      "end_score": 0.19249799252375246,
+      "peak_score": 0.19249799252375246,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000075,
+      "steps": 50,
+      "end_score": 0.17786143390616732,
+      "peak_score": 0.18118449886240398,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000076,
+      "steps": 50,
+      "end_score": 0.1728431718169044,
+      "peak_score": 0.18153742218237784,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000077,
+      "steps": 50,
+      "end_score": 0.17525712583732445,
+      "peak_score": 0.18445852738684085,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000078,
+      "steps": 50,
+      "end_score": 0.2218888370934035,
+      "peak_score": 0.2218888370934035,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000079,
+      "steps": 50,
+      "end_score": 0.20243666920132897,
+      "peak_score": 0.20337197221949366,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000080,
+      "steps": 50,
+      "end_score": 0.17818071528746102,
+      "peak_score": 0.19236774042779886,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000081,
+      "steps": 50,
+      "end_score": 0.17368000348657364,
+      "peak_score": 0.18452655242978858,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000082,
+      "steps": 50,
+      "end_score": 0.1934562729586884,
+      "peak_score": 0.19817401194655937,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000083,
+      "steps": 50,
+      "end_score": 0.1899174162392144,
+      "peak_score": 0.19447565111063386,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000084,
+      "steps": 50,
+      "end_score": 0.19001556300536548,
+      "peak_score": 0.24316352140177067,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000085,
+      "steps": 50,
+      "end_score": 0.18536452196564063,
+      "peak_score": 0.18676722789754116,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000086,
+      "steps": 50,
+      "end_score": 0.18200718302409388,
+      "peak_score": 0.19628154818271892,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000087,
+      "steps": 50,
+      "end_score": 0.061154252980924174,
+      "peak_score": 0.061154252980924174,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000088,
+      "steps": 50,
+      "end_score": 0.17645750984882871,
+      "peak_score": 0.18910996420954138,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000089,
+      "steps": 50,
+      "end_score": 0.18290013451367623,
+      "peak_score": 0.18729340728079602,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000090,
+      "steps": 50,
+      "end_score": 0.19521744424614604,
+      "peak_score": 0.1955579037011416,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000091,
+      "steps": 50,
+      "end_score": 0.195016433490063,
+      "peak_score": 0.195016433490063,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000092,
+      "steps": 50,
+      "end_score": 0.19486210614239874,
+      "peak_score": 0.20304061113456645,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000093,
+      "steps": 50,
+      "end_score": 0.20277901000868614,
+      "peak_score": 0.20277901000868614,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000094,
+      "steps": 50,
+      "end_score": 0.18581297325620633,
+      "peak_score": 0.18970951452946727,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000095,
+      "steps": 50,
+      "end_score": 0.18771405290122106,
+      "peak_score": 0.18771405290122106,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000096,
+      "steps": 50,
+      "end_score": 0.15714165275123246,
+      "peak_score": 0.18367774389454308,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000097,
+      "steps": 50,
+      "end_score": 0.2180356016818054,
+      "peak_score": 0.2180356016818054,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000098,
+      "steps": 50,
+      "end_score": 0.1832950272240081,
+      "peak_score": 0.19001130454847387,
+      "success": 0,
+      "updates": 10
+    },
+    {
+      "seed": 1000099,
+      "steps": 50,
+      "end_score": 0.3081843833713595,
+      "peak_score": 0.3211521831023677,
+      "success": 0,
+      "updates": 10
+    }
+  ]
+}
