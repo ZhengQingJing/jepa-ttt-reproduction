@@ -4,6 +4,8 @@ Values are recomputed from the three complete runs linked in each row. ± is the
 
 | Task / shift / method | Paper best | Reproduced best | Paper AUC | Reproduced AUC | Paper final MSE | Reproduced final MSE |
 |---|---:|---:|---:|---:|---:|---:|
+| [reacher/joint-phase](additional/reacher/joint-phase) | 0.7580 | 0.6351 ± 0.0128 | 0.6190 | 0.3787 ± 0.0202 | 0.48927 | 0.2514 ± 0.0322 |
+| [reacher/harmonic](additional/reacher/harmonic) | 0.6880 | 0.7406 ± 0.0876 | 0.5180 | 0.4314 ± 0.0457 | 0.35488 | 0.2782 ± 0.0092 |
 | [cube/quadratic](additional/cube/quadratic) | 0.6280 | 0.6405 ± 0.0116 | 0.5300 | 0.5220 ± 0.0040 | 0.24754 | 0.1501 ± 0.0128 |
 | [cube/delayed](additional/cube/delayed) | 0.6430 | 0.6452 ± 0.0033 | 0.5130 | 0.4678 ± 0.0052 | 0.10688 | 0.1032 ± 0.0035 |
 | [episodic-baseline/grid/trainable](additional/episodic-baseline/grid/trainable) | 0.2031 | 0.2115 ± 0.0045 | 0.2031 | 0.2115 ± 0.0045 | — | — |

@@ -2,6 +2,8 @@
 
 Independent reproduction of *JEPA-TTT: Persistent Test-Time Training of Latent World Models for Planning under Dynamics Shifts* by Zheyuan Zhang et al. A pretrained action-conditioned LeWorldModel adapts its dynamics predictor using RGB observations and executed actions. A frozen, offline-trained reward head scores plans during deployment. [Paper](https://arxiv.org/abs/2610.00722) · [Authors' project page](https://jepa-ttt.github.io/)
 
+The [robot-arm results and replay guide](results/robot-arms/) covers Reacher and OGBench-Cube across four dynamics shifts. The [v1.1.0 release](https://github.com/ZhengQingJing/jepa-ttt-reproduction/releases/tag/v1.1.0) includes the paired videos, offline viewer, checkpoints and replay traces.
+
 ## Task implementations
 
 | Task | Test-time dynamics changes | Reproduction entry point |
